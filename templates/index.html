@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{url_for('static',filename='images/icon.ico')}}">
+    <title>Welcome</title>
+
+    <!-- style {start} -->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='bootstrap/css/bootstrap.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='bootstrap/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/wave.css')}}">
+    <link href="{{url_for('static',filename='css/cover.css')}}" rel="stylesheet">
+    <link href="{{url_for('static',filename='css/cursor.css')}}" rel="styleshhet">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/loginP.css')}}">    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <!-- style{end} -->
+
+    <!--script{start}-->
+    <script src="{{url_for('static',filename='bootstrap/js/bootstrap.bundle.js')}}"></script>
+    <script src="{{url_for('static',filename='bootstrap/js/bootstrap.js')}}"></script>
+    <script src="{{url_for('static',filename='bootstrap/js/bootstrap.min.js')}}"></script>
+    <script src="{{url_for('static',filename='bootstrap/js/jquery.js')}}"></script>
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <!--script{end}-->
+</head>
+<div class="d-flex h-100 text-center text-white bg-dark">
+    
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="mb-auto">
+          <div>
+            <h3 class="float-md-start mb-0">Ayush Ghatkar</h3>
+            <nav class="nav nav-masthead justify-content-center float-md-end">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+              <a class="nav-link hover" href="/join">Join Me</a>
+              <a class="nav-link hover" href="/contact">Contact</a>
+              <a class="nav-link hover" href="/about">About Me</a>
+            </nav>
+        </header>
+    </div>
+</div>
+
+
+    <!--page{1}{start}-->
+    <div class="page1 res">
+        <header class="header">
+            <h1 class="hovert">Welcome To Ayush's Website<br></h1>
+            <p class="lead">Scrole Down</p>
+            <img src="{{url_for('static',filename='images/arrow-down-square-fill.svg')}}" class="down">
+        </header>
+    </div>
+    <div class="page2 res">
+        <section>
+            <div class="wave">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="content">
+                <h2>Wave</h2>
+            </div>
+        </section>
+    </div>
+    <!--page{1}{end}-->
+
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+    <script>
+        var cursor = document.querySelector(".cursor");
+        var cursor2 = document.querySelector(".cursor2");
+        document.addEventListener("mousemove",function(e){
+            cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
